@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace APIsAndJSON
 {
-    internal class RonVSKanyeAPI
+    public class RonVSKanyeAPI
     {
-    }
+        public static void Conversation()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                QuoteGenerator.KanyeQuote();
+                QuoteGenerator.RonQuote();
+            }
+        }
+}
 }
